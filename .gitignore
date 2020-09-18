@@ -1,0 +1,9 @@
+/.history
+/.idea
+/.vscode/launch.json
+/.vscode/config.js
+/coverage
+/node_modules
+/dist
+/bin
+.tapdinfo.json
