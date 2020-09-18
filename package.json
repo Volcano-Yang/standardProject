@@ -1,0 +1,25 @@
+{
+  "name": "standardproject",
+  "version": "1.0.0",
+  "description": "配置好editorconfig、eslint 、husky、git ignore的比较标准的前端项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volcano-Yang/standardProject.git"
+  },
+  "author": "volcanoYang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Volcano-Yang/standardProject/issues"
+  },
+  "homepage": "https://github.com/Volcano-Yang/standardProject#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}
