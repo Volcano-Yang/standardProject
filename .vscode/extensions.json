@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "octref.vetur",
+        "hollowtree.vue-snippets",
+        "esbenp.prettier-vscode"
+    ]
+}

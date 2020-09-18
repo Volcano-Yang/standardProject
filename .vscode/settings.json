@@ -1,0 +1,11 @@
+{
+    "eslint.validate": ["javascript", "javascriptreact", "vue"],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "svn.ignoreMissingSvnWarning": true,
+    "search.exclude": {
+        "lib/externals/**": true
+    }
+}
