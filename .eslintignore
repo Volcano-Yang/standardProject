@@ -1,0 +1,10 @@
+.vscode
+dist
+node_modules
+tmpl.js
+lib/jserror/index.js
+lib/lite/index.js
+nodejs/nodecgi/**/protocol/**/*.js
+lib/externals/
+*.yml
+setup.js
