@@ -15,6 +15,111 @@
 2. 同时需要在安装目录下创建.prettier.json配置文件
 3. 安装好prettier插件
 
+### 项目安装eslint（以TX AlloyTeam ESLint 为参考）
+
+#### 基本版
+1. npm install --save-dev eslint-config-alloy babel-eslint
+2. 配置 .eslintrc.js
+```javascript
+module.exports = {
+    extends: [
+        'eslint-config-alloy',
+    ],
+    globals: {
+        // 这里填入你的项目需要的全局变量
+        // 这里值为 false 表示这个全局变量不允许被重新赋值，比如：
+        //
+        // jQuery: false,
+        // $: false
+    },
+    rules: {
+        // 这里填入你的项目需要的个性化配置，比如：
+        //
+        // // @fixable 一个缩进必须用两个空格替代
+        // 'indent': [
+        //     'error',
+        //     2,
+        //     {
+        //         SwitchCase: 1,
+        //         flatTernaryExpressions: true
+        //     }
+        // ]
+    }
+};
+```
+
+#### React版
+1. npm install --save-dev eslint-config-alloy eslint-plugin-react babel-eslint
+2. 配置 .eslintrc.js
+```javascript
+module.exports = {
+    extends: [
+        'eslint-config-alloy/react',
+    ],
+    globals: {
+        // 这里填入你的项目需要的全局变量
+        // 这里值为 false 表示这个全局变量不允许被重新赋值，比如：
+        //
+        // React: false,
+        // ReactDOM: false
+    },
+    rules: {
+        // 这里填入你的项目需要的个性化配置，比如：
+        //
+        // // @fixable 一个缩进必须用两个空格替代
+        // 'indent': [
+        //     'error',
+        //     2,
+        //     {
+        //         SwitchCase: 1,
+        //         flatTernaryExpressions: true
+        //     }
+        // ],
+        // // @fixable jsx 的 children 缩进必须为两个空格
+        // 'react/jsx-indent': [
+        //     'error',
+        //     2
+        // ],
+        // // @fixable jsx 的 props 缩进必须为两个空格
+        // 'react/jsx-indent-props': [
+        //     'error',
+        //     2
+        // ]
+    }
+};
+```
+
+#### Vue版
+1. npm install --save-dev eslint-config-alloy eslint-plugin-vue babel-eslint
+2. 配置 .eslintrc.js
+```javascript
+module.exports = {
+    extends: [
+        'eslint-config-alloy/vue',
+    ],
+    globals: {
+        // 这里填入你的项目需要的全局变量
+        // 这里值为 false 表示这个全局变量不允许被重新赋值，比如：
+        //
+        // Vue: false
+    },
+    rules: {
+        // 这里填入你的项目需要的个性化配置，比如：
+        //
+        // // @fixable 一个缩进必须用两个空格替代
+        // 'indent': [
+        //     'error',
+        //     2,
+        //     {
+        //         SwitchCase: 1,
+        //         flatTernaryExpressions: true
+        //     }
+        // ]
+    }
+};
+```
+
+
 ### 项目安装husky、lint-staged
 
 #### husky
